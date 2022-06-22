@@ -1,39 +1,34 @@
-Conflictos encontrados para documentar la Api con swagger:
-1. Al implementar las dependencias de swagger, se dede elegir la versión más estable, la que tiene mas usuarios, las últimas versiones generan errores en la compilación:
-https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui/2.9.2
-https://mvnrepository.com/artifact/io.springfox/springfox-swagger2/2.9.2
-
-2. Al descargarme el proyecto desde Spring.io, tenia la versión 2.6.3 del framework :
-   <parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.3</version> 
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-    para corregir el error del @bean, cambie la versión del framework a la versión 2.05
-    <parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.0</version>
-<!-- 	    <version>2.6.3</version> -->
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-    
-3.- Para visualizar el swagger, una vez levantado el servidor(compilación correcta) en la url : 
-http://localhost:8080/swagger-ui.html
-
-4.- Enlaces de referencias para resolver todos los bugs generados y guías para documentar la Api :
-https://spring.io/guides/gs/rest-service/ 
-https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api
-https://www.baeldung.com/spring-rest-openapi-documentation
-https://github.com/springfox/springfox/issues/3791
-
-
 :spring_version: current
 :toc:
 :project_id: gs-rest-service
 :icons: font
 :source-highlighter: prettify
+
+== Conflictos encontrados para documentar la Api con swagger:
+
+1. Al implementar las dependencias de swagger, se dede elegir la versión más estable, la que tiene mas usuarios, las últimas versiones generan errores en la compilación:
+* https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui/2.9.2
+* https://mvnrepository.com/artifact/io.springfox/springfox-swagger2/2.9.2
+
+2. Al descargarme el proyecto desde Spring.io, tenia la versión 2.6.3 del framework:
+      
+    para corregir el error del @bean, cambie la versión del framework a la versión 2.0.5
+    <parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>2.5.0</version>
+<!-- 	<version>2.6.3</version> -->
+	<relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    
+3.- Para visualizar el swagger, una vez levantado el servidor(compilación correcta) en la url: 
+* http://localhost:8080/swagger-ui.html.
+
+4.- Enlaces de referencias para resolver todos los bugs generados y guías para documentar la Api:
+* https://spring.io/guides/gs/rest-service/.
+* https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api.
+* https://www.baeldung.com/spring-rest-openapi-documentation.
+* https://github.com/springfox/springfox/issues/3791.
 
 This guide walks you through the process of creating a "`Hello, World`" RESTful web
 service with Spring.
